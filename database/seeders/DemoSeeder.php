@@ -39,7 +39,10 @@ class DemoSeeder extends Seeder
         );
 
         /** @var \Remp\CampaignModule\Campaign $campaign */
-        $campaign = \Remp\CampaignModule\Campaign::factory()->create();
+        $campaign = \Remp\CampaignModule\Campaign::factory()->create([
+            'signed_in' => true,
+            'devices' => ['desktop', 'mobile'],
+        ]);
 
         $campaignBanner = \Remp\CampaignModule\CampaignBanner::factory()->create([
             'banner_id' => $banner->id,

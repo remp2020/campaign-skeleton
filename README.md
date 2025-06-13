@@ -14,7 +14,7 @@ To run Campaign we strongly recommend you to integrate skeleton application with
     * [Segment integration](https://github.com/remp2020/campaign-module?tab=readme-ov-file#segment-integration)
   * [Integration with Beam Journal](#integration-with-beam-journal)
 * SSO
-  * [Integration with REMP SSO][#integration-with-remp-sso]
+  * [Integration with REMP SSO](#integration-with-remp-sso)
 
 Note: Docker Compose of this skeleton provides REMP SSO, so you don't have to install it manually to get the app running. Use of the Docker Compose and images provided in this repository is not recommended in the production environment and is intended for testing/development purposes.
 
