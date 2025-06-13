@@ -1,0 +1,42 @@
+services:
+  nginx:
+    environment:
+      NGINX_PORT: "9595"
+    ports:
+      - "9595:80"
+    volumes:
+      - "sso:/var/www/mnt/sso:ro"
+
+  # Uncomment if you want to expose MySQL port 3306 outside of Docker
+  #  mysql:
+  #    ports:
+  #      - "3306:3306"
+
+  campaign:
+    extra_hosts:
+      - "sso.remp.press:172.17.0.1" # if you run your own SSO instance, point this to the Docker host machine; expecting that SSO is resolvable there
+
+  # REMP SSO
+
+  sso:
+    image: "remp/skeleton-sso"
+    domainname: "sso.remp.press"
+    hostname: "sso"
+    user: "${UID:-1000}:${GID:-1000}"
+    environment:
+      REMP_SSO_ADDR: http://sso.remp.press:9595
+      GOOGLE_CALLBACK_URL: http://sso.remp.press:9595/auth/google/callback
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - "sso:/var/www/html/Sso:rw"
+
+volumes:
+  sso:
+
+networks:
+  nginx_network:
+    external: true
