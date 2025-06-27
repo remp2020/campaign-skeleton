@@ -11,7 +11,7 @@
         }
     },
     "require": {
-        "remp/campaign-module": "dev-master"
+        "remp/campaign-module": "4.1"
     },
     "autoload": {
         "psr-4": {
