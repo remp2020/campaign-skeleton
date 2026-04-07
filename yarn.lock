@@ -7614,7 +7614,7 @@ fsevents@~2.3.2:
 
 "remp-campaign@file:vendor/remp/campaign-module::locator=root-workspace-0b6124%40workspace%3A.":
   version: 0.0.0
-  resolution: "remp-campaign@file:vendor/remp/campaign-module#vendor/remp/campaign-module::hash=3141d4&locator=root-workspace-0b6124%40workspace%3A."
+  resolution: "remp-campaign@file:vendor/remp/campaign-module#vendor/remp/campaign-module::hash=0667c5&locator=root-workspace-0b6124%40workspace%3A."
   dependencies:
     "@babel/core": ^7.0
     "@medv/finder": ^4.0.2
@@ -7649,9 +7649,10 @@ fsevents@~2.3.2:
     salvattore: ^1.0.9
     vue: ^2.7
     vue-codemirror: 4.0.6
+    vue-json-pretty: ^1.9.5
     vue-slide-up-down: ^1.7.2
     vue-template-compiler: ^2.7
-  checksum: 1a07ca9ac8e040dfe7ce0cd72f895356c2d19cde1b39107caa787c5f48209d326d6774a594167963353a543f86041db86520332ac98cc5d46eb383f095b4e7bd
+  checksum: a4ed133d9651bd1c3c1a4ab16600853d2e740a7588194ed2a13ef8bd61ed24f9be26408f5f07f4f1296e6f729c065325c06e97e9a5f4d63ff8e35161f9442628
   languageName: node
   linkType: hard
 
@@ -8911,6 +8912,13 @@ resolve@^1.10.0:
   version: 2.3.4
   resolution: "vue-hot-reload-api@npm:2.3.4"
   checksum: dedefb87284bdba222a93bc55bc1441ee16d9e30546d57107c42d21102cfcafba058c8be35f2678370cee0588f1bf3ee7b32dbf3c1610e5c9bf851a5996a8351
+  languageName: node
+  linkType: hard
+
+"vue-json-pretty@npm:^1.9.5":
+  version: 1.9.5
+  resolution: "vue-json-pretty@npm:1.9.5"
+  checksum: c565194640b37a42d039db8dc41267b7147a223736043cc3814e69c4c1b7e9d76c185c4dc67a581290baec5d377516db5514a3a7a7a31f67280496b25fa402e8
   languageName: node
   linkType: hard
 
