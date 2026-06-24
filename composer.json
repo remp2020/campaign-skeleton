@@ -11,7 +11,7 @@
         }
     },
     "require": {
-        "remp/campaign-module": "5.0"
+        "remp/campaign-module": "5.1"
     },
     "autoload": {
         "psr-4": {

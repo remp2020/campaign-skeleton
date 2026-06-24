@@ -1480,18 +1480,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remp/js-commons@npm:^2.4":
-  version: 2.4.0
-  resolution: "@remp/js-commons@npm:2.4.0"
+"@remp/js-commons@npm:^2.5":
+  version: 2.5.0
+  resolution: "@remp/js-commons@npm:2.5.0"
   dependencies:
-    chart.js: ^4.4
+    rison: ^0.1.1
+  peerDependencies:
     datatables.net: ^1.10.25
     datatables.net-responsive: ^2.2.9
     datatables.net-rowgroup: ^1.1.3
-    jquery: 3.6.0
-    rison: ^0.1.1
-    vue: ^2.7.14
-  checksum: 899880c786a340c7ad15220becf5a9b2ec7a9f8534afc1748d752cd791e01f4db5263763f62661ad15e741ab6ed5448125ba7cb191b30ebe8c7bc9d6e6c3c53d
+    jquery: ">=3"
+    vue: ^2.7 || ^3
+  checksum: 76a2115ff9cd078bcaba768d0222496e24e93ba68b7835c4d4b97529c7e80da782cec9431b630933d0be9c5ed3d4c0a204c540b11fed37a273e28a4900ed9791
   languageName: node
   linkType: hard
 
@@ -7614,11 +7614,11 @@ fsevents@~2.3.2:
 
 "remp-campaign@file:vendor/remp/campaign-module::locator=root-workspace-0b6124%40workspace%3A.":
   version: 0.0.0
-  resolution: "remp-campaign@file:vendor/remp/campaign-module#vendor/remp/campaign-module::hash=0667c5&locator=root-workspace-0b6124%40workspace%3A."
+  resolution: "remp-campaign@file:vendor/remp/campaign-module#vendor/remp/campaign-module::hash=e43287&locator=root-workspace-0b6124%40workspace%3A."
   dependencies:
     "@babel/core": ^7.0
     "@medv/finder": ^4.0.2
-    "@remp/js-commons": ^2.4
+    "@remp/js-commons": ^2.5
     animate.css: ^3.7.0
     autosize: ^4.0.2
     bootstrap: ^3.4.1
@@ -7652,7 +7652,7 @@ fsevents@~2.3.2:
     vue-json-pretty: ^1.9.5
     vue-slide-up-down: ^1.7.2
     vue-template-compiler: ^2.7
-  checksum: a4ed133d9651bd1c3c1a4ab16600853d2e740a7588194ed2a13ef8bd61ed24f9be26408f5f07f4f1296e6f729c065325c06e97e9a5f4d63ff8e35161f9442628
+  checksum: 79154eddc59e9a6b88a76faa4c0a5473331a3c2e55a04819335419e0fdf8c7d3f2ac5d57bb6f4cf99811d055dcd17563ce3ba79bbf3a4bdbfa47f6174b3f1eb9
   languageName: node
   linkType: hard
 
@@ -8977,7 +8977,7 @@ resolve@^1.10.0:
   languageName: node
   linkType: hard
 
-"vue@npm:^2.7, vue@npm:^2.7.14":
+"vue@npm:^2.7":
   version: 2.7.14
   resolution: "vue@npm:2.7.14"
   dependencies:
